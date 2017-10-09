@@ -1,0 +1,12 @@
+[
+    'device',
+    'fake-protocal',
+    'eventname',
+    'mshare',
+    'util',
+    'now-base-avatar',
+    'now-base-button',
+    'now-base-cover',
+    'now-base-dialog',
+    'now-base-menu'
+];

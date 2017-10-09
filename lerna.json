@@ -1,0 +1,16 @@
+{
+  "lerna": "2.0.0-rc.1",
+  "version": "5.86.0",
+  "packages": [
+    "packages/*/*"
+  ],
+  "commands": {
+    "publish": {
+      "ignore": [
+        "test/**",
+        "src/**",
+        "make/**"
+      ]
+    }
+  }
+}

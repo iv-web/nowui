@@ -1,0 +1,51 @@
+#bar-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .download {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 100px;
+        background-color: rgba(0,0,0,.5);
+        
+        .icon-logo  {
+            display: inline-block;
+            margin: 0 7px;
+            vertical-align: top;
+            position: relative;
+            top: 7px;
+            width: 36px;
+            height: 36px;
+            background-image: url(https://8.url.cn/now/h5/img/logo_e29054a.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .download-btn {
+            position: absolute;
+            top: 12px;
+            right: 10px;
+            .download-word {
+                min-width: 80px;
+                padding: 0 10px;
+                border: 1px solid #fff;
+                border-radius: 13px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                color: #fff;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+

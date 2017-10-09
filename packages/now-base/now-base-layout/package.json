@@ -1,0 +1,53 @@
+{
+  "author": "",
+  "dependencies": {
+    "react": "^15.0.0 || ^16.0.0"
+  },
+  "description": "NOW直播 基础组件 toast",
+  "devDependencies": {},
+  "dist": {
+    "key": "/now-display-toast/-/now-display-toast-1.0.0.tgz",
+    "shasum": "76560dbcd574f4fc530233ca7a1f8eb27680e29b",
+    "size": 3835,
+    "tarball": "http://r.npm .oa.com/now-display-toast/download/now-display-toast-1.0.0.tgz"
+  },
+  "keywords": [
+    "now",
+    "展示组件"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "email": "ivwebt@gamil.com",
+      "name": "ivwebteam"
+    }
+  ],
+  "name": "now-base-layout",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
+    "prepublish": "babel src -d lib  --copy-files",
+    "build": "babel src -d lib  --copy-files && npm publish",
+    "dev": "babel src -d lib -w"
+  },
+  "version": "5.67.0",
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 2.3",
+              "iOS >= 6"
+            ]
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+.titlebar {
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    left: 0;
+    right: 0;
+
+    &.android {
+        top: 0;
+    }
+    .back {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 36px;
+        height: 36px;
+        background-image: url("./images/back.png?__sprite");
+        background-size: 36px 36px;
+    }
+    .share {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 36px;
+        height: 36px;
+        background-image: url("./images/share.png?__sprite");
+        background-size: 36px 36px;
+    }
+}

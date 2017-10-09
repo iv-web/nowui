@@ -1,0 +1,55 @@
+.nd-banner-area {
+    position: relative;
+    width: 100%;
+    padding-top: 40%;
+    overflow: hidden;
+}
+
+.default-banner-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nd-banner-scroller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+
+    &.noanimation {
+        transition: none;
+    }
+    .nd-banner-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.nd-banner-indicatorwrap {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 0;
+  white-space: nowrap;
+  .nd-banner-indicator {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 3px;
+    margin-left: 3px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    &.select {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}

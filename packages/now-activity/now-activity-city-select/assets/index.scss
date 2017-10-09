@@ -1,0 +1,89 @@
+.ct-title{
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+
+    margin: 0;
+
+    padding: 0 10px;
+    height: 30px;
+
+    color: #959595;
+    background: #F0F0F0;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+
+    z-index: 1;
+}
+
+.ct-list li,
+.ct-index span{
+    display: inline-block;
+
+    position: relative;
+
+    margin-right: -5px;
+
+    width: 33.33%;
+    height: 48px;
+
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+}
+.ct-index span{
+    width: 20%;
+}
+.ct-list li.js-active,
+.ct-index span.js-active{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* 页面节点太多，在这里直接实现1像素 */
+.ct-list li:after,
+.ct-index span:after{
+    display: block;
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: -100%;
+    left: 0;
+
+    border-bottom: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(0.5);
+
+    pointer-events: none;
+}
+.poor-device .ct-list li:after,
+.poor-device .ct-index span:after{
+    right: 0;
+    bottom: 0;
+
+    -webkit-transform: scale(1);
+}
+
+
+.no-data{
+    padding-top:60px;
+    height: auto;
+
+    -webkit-box-align: start;
+}
+.city-mask{
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    position: absolute;
+    z-index: 10001;
+    background-color: white;
+    display: none;
+    text-align: center;
+}
+

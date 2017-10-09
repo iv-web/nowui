@@ -1,0 +1,158 @@
+.now-share-panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 150px;
+    background: rgba(255,255,255,0.9);
+    z-index: 30;
+    ul {
+        margin: 22px 0 0;
+        display: flex;
+        height: 88px;
+        padding-left: 0;
+        li {
+            flex: 1;
+            list-style: none;
+            position: relative;
+            text-align: center;
+            height: 64px;
+            overflow: hidden;
+            .item {
+                display: inline-block;
+                width: 50px;
+                height: 28px;
+                line-height: 28px;
+                padding-top: 36px;
+                vertical-align: top;
+                text-align: center;
+                color: #999999;
+                font-size: 12px;
+                position: relative;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    position: absolute;
+                    background-size: 100% 100%;
+                    top: 0;
+                    left: 7px;
+                }
+            }
+            &:nth-child(1) {
+                .item {
+                    animation: shareiconin .1s ease-in both;
+                }
+            }
+            &:nth-child(2) {
+                .item {
+                    animation: shareiconin .1s ease-in .05s both;
+                }
+            }
+            &:nth-child(3) {
+                .item {
+                    animation: shareiconin .1s ease-in .1s both;
+                }
+            }
+            &:nth-child(4) {
+                .item {
+                    animation: shareiconin .1s ease-in .15s both;
+                }
+            }
+            &:nth-child(5) {
+                .item {
+                    animation: shareiconin .1s ease-in .2s both;
+                }
+            }
+        }
+    }
+    .cancel {
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 16px;
+        color: #333333;
+        line-height: 40px;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #ddd;
+            transform: scale3d(1,0.5,1);
+        }
+    }
+}
+
+@keyframes shareiconin {
+    0% {
+        transform: translate3d(0,100%,0);
+    }
+}
+
+.sharePanel-enter{
+    animation: sharePanel-enter .2s;    
+}
+
+.sharePanel-leave{
+    animation: sharePanel-leave .2s;
+}
+
+// .sharePanel-enter {
+//   transform: translate3d(0, 100%, 0);
+// }
+// .sharePanel-enter-active {
+//   transform: translate3d(0, 0%, 0);
+// }
+// .sharePanel-leave {
+//   transform: translate3d(0, 0%, 0);
+// }
+// .sharePanel-leave-active {
+//   transform: translate3d(0, 100%, 0);
+// }
+@keyframes sharePanel-enter {
+    0% {
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+@keyframes sharePanel-leave {
+    100% {
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+.icon-timeline {
+    &:before {
+        background: url('./images/timeline@2x.png?__sprite');
+    }
+}
+
+.icon-qq {
+    &:before {
+        background: url('./images/qq@2x.png?__sprite');
+    }
+}
+
+.icon-qzone {
+    &:before {
+        background: url('./images/qzone@2x.png?__sprite');
+    }
+}
+
+.icon-wechat {
+    &:before {
+        background: url('./images/wechat@2x.png?__sprite');
+    }
+}
+
+.icon-weibo {
+    &:before {
+        background: url('./images/weibo@2x.png?__sprite');
+    }
+}
+

@@ -1,0 +1,53 @@
+{
+  "author": {
+    "name": "ivweb"
+  },
+  "dependencies": {
+    "now-util-cookie": "^5.53.0",
+    "now-util-device": "^5.53.0",
+    "now-util-localstorge": "^5.53.0",
+    "now-util-url": "^5.53.0",
+    "now-util-webp": "^5.56.0"
+  },
+  "description": "util",
+  "devDependencies": {},
+  "keywords": [
+    "lego"
+  ],
+  "licenses": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "email": "ivwebt@gamil.com",
+      "name": "ivwebteam"
+    }
+  ],
+  "name": "util",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
+    "prepublish": "babel src -d lib  --copy-files",
+    "build": "babel src -d lib  --copy-files && npm publish",
+    "dev": "babel src -d lib -w"
+  },
+  "version": "5.56.0",
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 2.3",
+              "iOS >= 6"
+            ]
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}

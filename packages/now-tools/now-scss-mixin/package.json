@@ -1,0 +1,35 @@
+{
+  "name": "now-scss-mixin",
+  "version": "5.33.0",
+  "description": "NOW直播组件 公用scss mixin",
+  "keywords": [
+    "now",
+    "css"
+  ],
+  "author": "",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "ivwebt@gamil.com",
+      "name": "ivwebteam"
+    }
+  ],
+  "main": "lib/index.js",
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 2.3",
+              "iOS >= 6"
+            ]
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}

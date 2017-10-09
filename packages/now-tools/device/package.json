@@ -1,0 +1,42 @@
+{
+  "name": "device",
+  "author": {
+    "name": "ivweb"
+  },
+  "description": "获取设备类型",
+  "version": "5.61.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "optionalDependencies": {},
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
+    "prepublish": "babel src -d lib  --copy-files",
+    "build": "babel src -d lib  --copy-files && npm publish",
+    "dev": "babel src -d lib -w"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "maintainers": [
+    {
+      "email": "ivwebt@gamil.com",
+      "name": "ivwebteam"
+    }
+  ],
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 2.3",
+              "iOS >= 6"
+            ]
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}

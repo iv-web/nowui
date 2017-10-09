@@ -1,0 +1,115 @@
+.now-toast {
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    top: 0;
+    padding: 8px 10px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 100;
+    overflow: hidden;
+    border-radius: 0 0 6px 6px;
+    box-sizing: border-box;
+
+    &:before {
+        display: none;
+        content: "";
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        vertical-align: top;
+        position: relative;
+        top: 2px;
+        background-size: 100% 100%;
+    }
+
+    &.toastSuccess {
+        background-color: #05d380;
+        color: #fff;
+        &:before {
+            display: inline-block;
+            background-image: url('./images/icon_ok@2x.png?__sprite');
+        }
+    }
+    &.toastError {
+        background-color: #ff554c;
+        color: #fff;
+    }
+    &.toastWarn {
+        background-color: #ffc333;
+        color: #fff;
+        &:before {
+            display: inline-block;
+            background-image: url('./images/icon_alert@2x.png?__sprite');
+        }
+    }
+    &.toastInfo {
+        text-align: center;
+        background: rgba(0,0,0,0.7);
+        color: #fff;
+    }
+}
+
+@keyframes toast-enter {
+    0% {
+        transform: translate3d(0, -100%, 0);        
+    }
+}
+
+@keyframes toast-leave {
+    100% {
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.now-toast-enter {
+    animation: toast-enter .3s;
+}
+
+.now-toast-leave {
+    animation: toast-leave .3s;
+}
+//     opacity: 0.01;
+// }
+// .now-toast-appear-active {
+//     opacity: 1;
+//     transition: opacity .2s ease-in-out;
+// }
+// .now-toast-enter {
+//     opacity: 0.01;
+// }
+// .now-toast-enter-active {
+//     opacity: 1;
+//     transition: opacity 0.2s ease-in-out;
+// }
+// .now-toast-leave {
+//     opacity: 1;
+// }
+// .now-toast-leave-active {
+//     opacity: 0.01;
+//     transition: opacity 0.2s ease-in-out;
+// }
+// .now-toast-appear {
+//     opacity: 0.01;
+// }
+// .now-toast-appear-active {
+//     opacity: 1;
+//     transition: opacity .2s ease-in-out;
+// }
+// .now-toast-enter {
+//     opacity: 0.01;
+// }
+// .now-toast-enter-active {
+//     opacity: 1;
+//     transition: opacity 0.2s ease-in-out;
+// }
+// .now-toast-leave {
+//     opacity: 1;
+// }
+// .now-toast-leave-active {
+//     opacity: 0.01;
+//     transition: opacity 0.2s ease-in-out;
+// }

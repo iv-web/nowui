@@ -1,0 +1,45 @@
+{
+  "name": "now-img",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "description": "now 直播 公用图片",
+  "author": {
+    "name": "ivweb"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
+    "prepublish": "babel src -d lib  --copy-files",
+    "build": "babel src -d lib  --copy-files && npm publish",
+    "dev": "babel src -d lib -w"
+  },
+  "license": "MIT",
+  "keywords": [
+    "now",
+    "公用资源"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "maintainers": [
+    {
+      "email": "ivwebt@gamil.com",
+      "name": "ivwebteam"
+    }
+  ],
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 2.3",
+              "iOS >= 6"
+            ]
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}

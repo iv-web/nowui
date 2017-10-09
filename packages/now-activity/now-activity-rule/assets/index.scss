@@ -1,0 +1,26 @@
+.rule {
+    margin: 0 10px 40px 10px;
+    h3 {
+        text-align: center;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        .rule-item {
+            margin-bottom: 25px;
+            .sub-title {
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 8px;
+            }
+            .sub-content {
+                font-size: 14px;
+                color: #999;
+            }
+        }
+    }
+}

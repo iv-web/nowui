@@ -1,0 +1,65 @@
+.nd-scroller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    &.noanimation {
+      transition: none;
+    }
+
+    .nd-scroller-group {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      height: 100%;
+    }
+
+    .nd-scroll-view {
+    }
+}
+
+.nd-indicator-scoller {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: transform .3s;
+    &.noanimation {
+        transition: none;
+    }
+}
+
+.nd-indicator-group {
+  position: absolute;
+  width: 100%;
+  bottom: 6px;
+  height: 20px;
+}
+
+ .nd-indicatorwrap {
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0;
+    white-space: nowrap;
+    .nd-indicator {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      margin-right: 3px;
+      margin-left: 3px;
+      position: relative;
+      border-radius: 4px;
+      background-color: #ccc;
+      &.select {
+         background-color: #777; 
+      }
+    }
+  }

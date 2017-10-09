@@ -1,0 +1,58 @@
+{
+  "author": "",
+  "dependencies": {
+    "now-img": "^5.4.1",
+    "now-util-pic": "^5.4.1",
+    "classnames": "*",
+    "react": "^15.0.0 || ^16.0.0",
+    "react-transition-group": "^2.2.0"
+  },
+  "description": "NOW直播组件 连击礼物消息展示",
+  "devDependencies": {},
+  "dist": {
+    "key": "/now-display-combogift/-/now-display-combogift-5.4.1.tgz",
+    "shasum": "98c2690e9106e93a6c806ab3dba5712662e038c2",
+    "size": 67895,
+    "tarball": "http://r.npm .oa.com/now-display-combogift/download/now-display-combogift-5.4.1.tgz"
+  },
+  "keywords": [
+    "now",
+    "展示组件"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "email": "ivwebt@gamil.com",
+      "name": "ivwebteam"
+    }
+  ],
+  "name": "now-display-combogift",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
+    "prepublish": "babel src -d lib  --copy-files",
+    "build": "babel src -d lib  --copy-files && npm publish",
+    "dev": "babel src -d lib -w"
+  },
+  "version": "5.86.0",
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 2.3",
+              "iOS >= 6"
+            ]
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}

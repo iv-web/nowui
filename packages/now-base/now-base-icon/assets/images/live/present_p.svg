@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>B388BAA0-35CB-477B-BA64-5470373B242A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M22.0236344,13.7273597 C23.4399147,12.6635565 24.0196101,10.9923304 23.3184205,9.99457178 C22.6172308,8.99681313 20.9006824,9.05035279 19.4844022,10.114156 C18.068122,11.1779591 17.4884265,12.8491852 18.1896161,13.8469439 C18.8908058,14.8447025 20.6073542,14.7911629 22.0236344,13.7273597 L22.0236344,13.7273597 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="5.72423648" height="5.28168447" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M14.4444022,13.7950289 C13.028122,12.7312257 12.4484265,11.0599996 13.1496161,10.062241 C13.8508058,9.0644823 15.5673542,9.11802196 16.9836344,10.1818251 C18.3999147,11.2456283 18.9796101,12.9168544 18.2784205,13.914613 C17.5772308,14.9123717 15.8606824,14.858832 14.4444022,13.7950289 L14.4444022,13.7950289 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="5.72423648" height="5.28168447" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="规范" transform="translate(-545.000000, -1465.000000)">
+            <g id="直播页v2.0icon" transform="translate(496.000000, 1305.000000)">
+                <g id="icon礼物-p" transform="translate(49.000000, 160.000000)">
+                    <g id="礼物-copy-2">
+                        <ellipse id="Oval-50-Copy-3" fill="#000000" opacity="0.3" cx="18" cy="18" rx="18" ry="18"></ellipse>
+                        <path d="M22.7197266,12.6541353 L24.8405503,12.6541353 C26.0331814,12.6541353 27,13.5262603 27,14.6091675 L27,15.9096295 C27,16.989364 26.0322418,17.8646617 24.8466584,17.8646617 L11.1533416,17.8646617 C9.96408387,17.8646617 9,16.9925367 9,15.9096295 L9,14.6091675 C9,13.529433 9.97000704,12.6541353 11.1599721,12.6541353 L11.9450391,12.6541353 L13.8246221,12.6541353" id="Rectangle-37" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M25.56,20.566968 L25.56,23.8152328 C25.56,25.050914 24.5928154,26.0526316 23.4041745,26.0526316 L13.3158255,26.0526316 C12.125196,26.0526316 11.16,25.0486257 11.16,23.8152328 L11.16,17.8646617" id="Rectangle-37" stroke="#FFFFFF" stroke-linecap="round"></path>
+                        <use id="Oval-44-Copy" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                        <use id="Oval-44-Copy-2" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                        <path d="M18.2789572,13.0700627 L18.2789572,17.5362281" id="Line" stroke="#FFFFFF" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

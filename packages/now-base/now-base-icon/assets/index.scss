@@ -1,0 +1,24 @@
+.now-icons-container{
+    display: flex;
+    align-items: stretch;
+    flex-direction:column;
+}
+h3{
+    height: 20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family: PingFangSC;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #05d380;
+}
+.now-icons-section{
+    margin-top:10px;
+    img{
+        margin:0 5px;
+        flex:1;
+        cursor: pointer;
+    }
+}

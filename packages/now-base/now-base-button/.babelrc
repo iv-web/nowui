@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "Android >= 2.3",
+            "iOS >= 6"
+          ]
+        }
+      }
+    ],
+    "stage-0"
+  ]
+}

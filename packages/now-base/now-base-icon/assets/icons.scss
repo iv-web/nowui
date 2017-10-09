@@ -1,0 +1,39 @@
+.now-base-icons{
+  width:36px;
+  height:36px;
+  &:active{
+  opacity: .5;
+  }
+}
+.now-base-icons-assist{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  &:active{
+    opacity: .5;
+  }
+}
+.now-base-icons-small{
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  &:active{
+    opacity: .5;
+  }
+}
+.now-base-icons-live{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  &:active{
+    opacity: .5;
+  }
+}
+.now-base-icons-logo{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  &:active{
+    opacity: .5;
+  }
+}

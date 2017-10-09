@@ -1,0 +1,48 @@
+{
+  "name": "now-base-apptoast",
+  "version": "5.86.0",
+  "description": "NOW 基础组件 APP阻断式toast",
+  "main": "lib/index.js",
+  "keywords": [
+    "now",
+    "展示组件"
+  ],
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
+    "prepublish": "babel src -d lib  --copy-files",
+    "build": "babel src -d lib  --copy-files && npm publish",
+    "dev": "babel src -d lib -w"
+  },
+  "devDependencies": {},
+  "author": {
+    "name": "ivweb"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "now-base-animation": "*"
+  },
+  "maintainers": [
+    {
+      "email": "ivwebt@gamil.com",
+      "name": "ivwebteam"
+    }
+  ],
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 2.3",
+              "iOS >= 6"
+            ]
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}

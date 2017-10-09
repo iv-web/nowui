@@ -1,0 +1,142 @@
+
+.combogift-message {
+    position: absolute;
+    z-index: 1;
+    &.combogift-enter {
+        transform: translate3d(-250px, 0, 0);
+    }
+    &.combogift-enter-active, {
+        transform: translate3d(0, 0, 0);
+        transition: transform 300ms cubic-bezier(0.03, 1.21, .6, 1.09);
+    }
+    &.combogift-leave {
+        opacity: 1;
+    }
+    &.combogift-leave-active {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+        transition: opacity 300ms ease-out, transform 300ms ease-out;
+    }
+    .detail-message-wrap {
+        position: relative;
+        width: 146px;
+        height: 35px;
+        background-color: #fff;
+        border-radius: 18px;
+    }
+    .user-photo {
+        width: 30px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin: 2px 0 0 2px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: 30px 30px;
+    }
+    .detail {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 2px 0 0 8px;
+        float: left;
+        p {
+            max-width: 82px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        p:first-child {
+            color: rgb(155,155,155);
+        }
+        p:last-child {
+            color: rgb(255,83,74);
+        }
+    }
+    .gift-photo {
+        position: absolute;
+        right: -9px;
+        bottom: 0;
+        transform: scale(0.5);
+    }
+    .giftcount {
+        position: absolute;
+        left: 160px;
+        bottom: 2px;
+        font-size: 0;
+        white-space:nowrap;
+        animation: giftcount 0.3s cubic-bezier(0.03, 1.21, .6, 1.09) backwards;
+    }
+    .icon-x {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+    }
+    .icon-num {
+        display: inline-block;
+        vertical-align: middle;
+        height: 32px;
+    }
+    $colors-list : red, orange, yellow, purple; 
+
+    @each $color in $colors-list {
+        .numcolor-#{$color} { 
+            .icon-x {
+                $icon-x: "./images/" + $color + "_x@2x.png?__sprite";
+                background-image:url(#{$icon-x});
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+            @for $i from 0 through 9 {
+                .num#{$i} {
+                    $img: "./images/" + $color + $i + "@2x.png?__sprite";
+                    background-image: url(#{$img});
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    
+    .num0 {
+        width: 24px;
+    }
+    .num1 { 
+        width: 17px;
+    }
+    .num2 {
+        width: 28px;
+    }
+    .num3 {
+        width: 27px;
+    }
+    .num4 {
+        width: 27px;
+    }
+    .num5 {
+        width: 26px;
+    }
+    .num6 {
+        width: 29px;
+    }
+    .num7 {
+        width: 26px;
+    }
+    .num8 {
+        width: 26px;
+    }
+    .num9 {
+        width: 26px;
+    }
+
+}
+
+@keyframes giftcount {
+    0% {
+        transform: scale(2) translateZ(0);
+    }
+
+    100% {
+        transform: scale(0.8) translateZ(0);
+    }
+}

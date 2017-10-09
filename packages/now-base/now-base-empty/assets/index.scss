@@ -1,0 +1,40 @@
+.now-empty-wrapper {
+  display: block;
+  height: 100%;
+  font-size: 0;
+  text-align: center;
+  &:after {
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    margin-left: -1px;
+    vertical-align: middle;
+    content: "";
+  }
+  .now-empty-inner {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #bbb;
+  }
+  .now-empty-icon {
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 140px;
+  }
+  .now-empty-1 {
+    background-image: url(./images/1.svg);
+  }
+  .now-empty-2 {
+    background-image: url(./images/2.svg);
+  }
+  .now-empty-3 {
+    background-image: url(./images/3.svg);
+  }
+  .now-empty-4 {
+    background-image: url(./images/4.svg);
+  }
+  .now-empty-5 {
+    background-image: url(./images/5.svg);
+  }
+}

@@ -1,0 +1,76 @@
+.now-button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    // 按钮大小 Start
+    &.now-button-large {
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        font-size: 16px;
+    }
+
+    &.now-button-middle {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+    &.now-button-small {
+        width: 80px;
+        height: 26px;
+        line-height: 26px;
+        border-radius: 26px;
+        font-size: 12px;
+    }
+    // 按钮大小 End
+    
+    // 按钮样式 Start
+    &.now-button-type1 {
+        border: solid 1px #05d380;
+        background-color: transparent;
+        color: #000;
+        &:active,
+        &.pressed {
+            opacity: 0.5;
+        }
+        &.disabled {
+            border-color: #e6e6e6;
+            color: #bbb;
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+    &.now-button-type2 {
+        background-color: #05d380;
+        color: #fff;
+        &:active,
+        &.pressed {
+            opacity: 0.5;
+        }
+        &.disabled {
+            &:active {
+                opacity: 1;
+            }
+            background-color: #e6e6e6;
+        }
+    }
+    &.now-button-type3 {
+        border: solid 1px #333333;
+        &:active,
+        &.pressed {
+            opacity: 0.5;
+        }
+        &.disabled {
+            border-color: #e6e6e6;
+            &:active {
+                opacity: 1;
+            }
+        }
+    }
+    // 按钮样式 End
+}

@@ -1,0 +1,15 @@
+.now-base-list-cont{
+  width:100%;
+  display: flex;
+  flex-direction:column;
+  &>div:nth-child(2n){
+    background-color: #ebebeb;
+  }
+  &>div:nth-child(2n-1){
+    background-color: #d8d8d8;
+  }
+}
+.now-base-list-item{
+  width:100%;
+  height:50px;
+}

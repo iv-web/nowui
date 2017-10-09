@@ -1,0 +1,26 @@
+#root {
+  .nd-preview-wrapper {
+    .list-menu-enter {
+      opacity: 0.01;
+      bottom: -200px;
+      transform: translate3d(0, 100%, 0);
+    }
+
+    .list-menu-enter.list-menu-enter-active {
+      opacity: 1;
+      transform: translate3d(0, 0%, 0);
+      transition: all 200ms ease;
+    }
+
+    .list-menu-leave {
+      opacity: 1;
+      transform: translate3d(0, 0%, 0);
+    }
+
+    .list-menu-leave.list-menu-leave-active {
+      opacity: 0.01;
+      transform: translate3d(0, 100%, 0);
+      transition: all 200ms ease;
+    }
+  }
+}

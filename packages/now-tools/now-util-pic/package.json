@@ -1,0 +1,47 @@
+{
+  "name": "now-util-pic",
+  "author": {
+    "name": "ivweb"
+  },
+  "dependencies": {
+    "now-util-webp": "^5.56.0"
+  },
+  "description": "NOW直播 格式化图片请求操作, 自动替换为是否支持 webp格式",
+  "keywords": [
+    "now",
+    "util",
+    "工具"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
+    "prepublish": "babel src -d lib  --copy-files",
+    "build": "babel src -d lib  --copy-files && npm publish",
+    "dev": "babel src -d lib -w"
+  },
+  "version": "5.73.0",
+  "maintainers": [
+    {
+      "email": "ivwebt@gamil.com",
+      "name": "ivwebteam"
+    }
+  ],
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "Android >= 2.3",
+              "iOS >= 6"
+            ]
+          }
+        }
+      ],
+      "stage-0"
+    ]
+  }
+}

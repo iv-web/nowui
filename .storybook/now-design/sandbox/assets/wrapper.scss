@@ -1,0 +1,73 @@
+@import "./animate";
+
+.nd-preview-wrapper {
+    height: 100%;
+    .preview-nav {
+        overflow: auto;
+
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+
+        padding: 10px;
+        height: 200px;
+
+        text-align: center;
+
+        background-color: #fff;
+
+        box-shadow: rgba(0, 0, 0, .1) 0 -10px 15px inset,
+        rgba(0, 0, 0, .1) 0 -10px 15px inset,
+        rgba(0, 0, 0, .12) 0 -20px 25px inset,
+        rgba(0, 0, 0, .12) 0 20px 25px inset;
+        li {
+            line-height: 28px;
+            a {
+                color: #333;
+            }
+            &.actived {
+                a {
+                    color: #05d380;
+                }
+            }
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .wrapper-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+
+        height: 40px;
+
+        line-height: 40px;
+        text-align: center;
+
+        color: #fefefe;
+        background: linear-gradient(rgba(55, 55, 55, .98), #545456);
+        .header-more {
+            position: absolute;
+            right: 10px;
+            &::after {
+                font-size: 16px;
+
+                content: "\2022 \2022 \2022 ";
+            }
+        }
+    }
+    .mask {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9998;
+        background: rgba(0, 0, 0, .5);
+    }
+}

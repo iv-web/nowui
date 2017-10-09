@@ -1,0 +1,20 @@
+// 当只有一个 tap 的时候，实现 100% 平铺样式
+.now-base-topic-ctn{
+  width:240%;
+  height:100%;
+  display: flex;
+  & > div{
+    color:white;
+    width:80%;
+    height:100%;
+    flex:1;
+    background:url(http://static.zybuluo.com/jimmythr/9mglukb7zlnfey84q2o4zv97/test.png);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div + div{
+    margin-left:3px;
+  }
+}

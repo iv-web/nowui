@@ -1,0 +1,264 @@
+html,
+body,
+#main {
+  width: 100%;
+  height: 100%; 
+  min-width: 1300px;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, 
+kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif; }
+  body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px; }
+  body ::-webkit-scrollbar-button:vertical {
+    background-color: transparent;
+    border: 0px; }
+ol, ul {
+  list-style: none; }
+
+a {
+    &:hover,
+    &:active{
+        text-decoration: none;
+    }
+}
+
+.page {
+  width: 100%;
+  height: 100%; }
+
+#mainframe {
+  border: none; }
+
+.header {
+  border-bottom: 2px solid #05d380;
+  padding: 20px 0; }
+  .header .header-box {
+    width: 1000px;
+    margin: 0 auto;
+    display: -webkit-box; }
+  .header .logo {
+    display: block;
+    width: 125px;
+    height: 38px;
+    background: url('//8.url.cn/nowoa/schedule/img/index_1_z_722850a.png') 0px 0px no-repeat;
+    -webkit-background-size: 125px 38px;
+            background-size: 125px 38px; }
+  .header .empty {
+    -webkit-box-flex: 1; }
+  .header .schedule {
+    display: block;
+    font-size: 20px;
+    color: #555;
+    margin-top: 9px;
+    margin-left: 82px;
+    line-height: 20px;
+    height: 23px;
+    cursor: pointer; }
+    .header .schedule:hover {
+      color: #000;
+      text-decoration: none; }
+    .header .schedule:active {
+      color: #05d380;
+      outline: none;
+      text-decoration: none; }
+    
+.desc-wrapper {
+  margin-top: 20px;
+  font-size: 18px; }
+
+.page.index {
+  font-size: 0;
+  text-align: center;
+  background-color: #05d380;
+  color: #fff; }
+  .page.index:after {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    content: "";
+    vertical-align: middle; }
+  .page.index .center-box {
+    display: inline-block; }
+  .page.index h1 {
+    font-size: 90px;
+    line-height: 1;
+    letter-spacing: -2px;
+    font-weight: 700; }
+  .page.index h2 {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.25; }
+
+/*  
+ * 临时改动 2016/11/24 By Jeremygao
+ */
+.banner {
+    position: relative; }
+    .banner img {
+        width: 100%; }
+    .banner .intro {
+        position: absolute;
+        bottom: 15%;
+        left: 50%; }
+    .banner .schedule-word {
+        color: #02cb78;
+        h1 {
+            font-size: 64px;
+            font-weight: 400;
+        }
+        .desc {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    }
+    .banner .goodness {
+        width: 480px;
+        margin-top: 20px; }
+    .banner .goodness-item {
+        font-size: 16px;
+        color: #222;
+        position: relative;
+        display: inline-block;
+        padding-left: 12px;
+        line-height: 30px; }
+        .banner .goodness-item:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 4px;
+            background: #02cb78;
+            left: 0;
+            top: 11px; }
+        .banner .goodness-item:last-child {
+            float: right;
+        }
+    .banner .schedule-button {
+        display: inline-block;
+        color: #fff;
+        font-size: 22px;
+        width: 246px;
+        height: 56px;
+        line-height: 56px;
+        text-align: center;
+        text-decoration: none;
+        background: #02cb78;
+        border-radius: 28px;
+        margin-top: 40px;
+        cursor: pointer; }
+        .banner .schedule-button:active {
+            opacity: .7;
+
+        }
+.bottom {
+    display: -webkit-box;
+    margin-top: 40px;
+    padding-bottom: 70px; }
+    
+    .bottom .empty {
+        -webkit-box-flex: 1
+    }
+
+    .bottom .icon-box {
+        display: -webkit-box
+    }
+
+    .bottom .icon {
+        width: 226px;
+        position: relative;
+        text-align: center
+    }
+
+    .bottom .icon:last-child {
+        margin-right: 0
+    }
+
+    .bottom .icon:before {
+        content: "";
+        display: block;
+        margin:0 auto 10px;
+        width: 115px;
+        height: 115px; 
+        background-repeat: no-repeat
+    }
+
+    .bottom .quick-schedule:before {
+        background-repeat: no-repeat;
+    }
+
+    .bottom .easy-share:before {
+        background-repeat: no-repeat;
+    }
+
+    .bottom .quick-play:before {
+        background-repeat: no-repeat;
+    }
+
+    .bottom .quick-title {
+        font-size: 20px;
+        color: #222;
+        font-weight: 700;
+        margin-bottom: 10px
+    }
+
+    .bottom .quick-word {
+        font-size: 15px;
+        color: #444;
+        line-height: 24px;
+    }
+
+    .bottom .arrow-right {
+        width: 38px;
+        height: 24px;
+        margin: 40px 10px 0;
+        background-repeat: no-repeat;
+    }
+
+    .bottom .quick-schedule:before {
+        background: url(./images/tl4.png);
+    }
+
+    .bottom .easy-share:before {
+        background: url(./images/tl1.png);
+    }
+
+    .bottom .quick-play:before {
+        background: url(./images/tl3.png);
+    }
+
+    .bottom .quick-clean:before {
+        background-image: url(./images/tl2.png);
+    }
+
+    .bottom .arrow-right {
+        background-position: 0px 0px
+    }
+
+    .bottom .arrow-right {
+        background-size: 38px 24px;
+        background-image: url(//8.url.cn/nowoa/schedule/img/index_1_z_5dabff3.png)
+    }
+.copy-right {
+    color: #bfbfbf;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20px
+}
+
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  color: #aaaaaa; }

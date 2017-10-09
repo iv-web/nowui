@@ -1,0 +1,12 @@
+.now-base-layout-flex-ctn{
+  display: flex;
+  width:100%;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  & > div{
+    flex:1;
+    margin:0.18rem 0.22rem;
+  }
+}

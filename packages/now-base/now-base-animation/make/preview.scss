@@ -1,0 +1,29 @@
+.test-animation {
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    left: 0;
+    top: 200px;
+    background-color: #05d380;
+}
+
+.float-enter {
+    animation: floatRight 0.2s both;
+}
+.float-leave {
+    animation: floatLeft 0.2s both;
+}
+
+@keyframes floatRight {
+    0%{
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes floatLeft {
+    100%{
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
