@@ -23,7 +23,7 @@
 遵循最小依赖原则，所有的组件都是单独的 npm 包， 需要使用对应的组件时，安装对应的包即可。
 
 ```
-$ npm intalll 需要的组件名(now-xxx-xxx)
+$ npm install 需要的组件名(now-xxx-xxx)
 ```
 
 
