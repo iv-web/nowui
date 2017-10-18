@@ -1,6 +1,6 @@
 {
   "name": "now-activity-rule",
-  "version": "5.67.0",
+  "version": "0.0.1",
   "description": "活动规则组件",
   "main": "src/index.js",
   "keywords": [

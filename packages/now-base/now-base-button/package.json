@@ -1,6 +1,6 @@
 {
   "name": "now-base-button",
-  "version": "5.86.0",
+  "version": "0.0.1",
   "description": "NOW 基础组件 button",
   "main": "src/index.js",
   "keywords": [

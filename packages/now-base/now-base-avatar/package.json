@@ -1,6 +1,6 @@
 {
   "name": "now-base-avatar",
-  "version": "5.83.0",
+  "version": "0.0.1",
   "description": "NOW 基础组件 avatar",
   "main": "src/index.js",
   "keywords": [

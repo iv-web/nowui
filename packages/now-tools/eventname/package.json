@@ -4,7 +4,7 @@
     "name": "ivweb"
   },
   "description": "eventname",
-  "version": "5.86.0",
+  "version": "0.0.1",
   "main": "src/index.js",
   "license": "MIT",
   "optionalDependencies": {},

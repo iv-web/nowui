@@ -1,6 +1,6 @@
 {
   "name": "now-base-image",
-  "version": "5.86.0",
+  "version": "0.0.1",
   "description": "NOW直播组件 图片加载器",
   "main": "src/index.js",
   "keywords": [

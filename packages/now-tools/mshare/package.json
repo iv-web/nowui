@@ -4,7 +4,7 @@
     "name": "ivweb"
   },
   "description": "mshare",
-  "version": "5.53.0",
+  "version": "0.0.1",
   "main": "src/index.js",
   "license": "MIT",
   "optionalDependencies": {},
@@ -14,7 +14,7 @@
     "dev": "babel src -d lib -w"
   },
   "dependencies": {
-    "now-util-mqq": "^5.53.0"
+    "now-util-mqq": "^0.0.1"
   },
   "devDependencies": {},
   "maintainers": [

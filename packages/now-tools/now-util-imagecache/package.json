@@ -18,7 +18,7 @@
     "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "5.53.0",
+  "version": "0.0.1",
   "maintainers": [
     {
       "email": "ivwebt@gamil.com",

@@ -1,6 +1,6 @@
 {
   "name": "now-activity-city-select",
-  "version": "5.67.0",
+  "version": "0.0.1",
   "description": "活动城市选择组件",
   "main": "src/index.js",
   "keywords": [

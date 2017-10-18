@@ -4,7 +4,7 @@
     "name": "ivweb"
   },
   "dependencies": {
-    "now-util-webp": "^5.56.0"
+    "now-util-webp": "^0.0.1"
   },
   "description": "NOW直播 格式化图片请求操作, 自动替换为是否支持 webp格式",
   "keywords": [
@@ -19,7 +19,7 @@
     "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "5.73.0",
+  "version": "0.0.1",
   "maintainers": [
     {
       "email": "ivwebt@gamil.com",

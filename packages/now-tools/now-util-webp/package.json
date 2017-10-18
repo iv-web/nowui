@@ -4,7 +4,7 @@
     "name": "ivweb"
   },
   "dependencies": {
-    "now-util-cookie": "^5.53.0"
+    "now-util-cookie": "^0.0.1"
   },
   "description": "NOW直播 cookie 操作",
   "devDependencies": {},
@@ -20,7 +20,7 @@
     "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "5.56.0",
+  "version": "0.0.1",
   "maintainers": [
     {
       "email": "ivwebt@gamil.com",

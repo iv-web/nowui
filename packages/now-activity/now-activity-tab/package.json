@@ -1,6 +1,6 @@
 {
   "name": "now-activity-tab",
-  "version": "5.67.0",
+  "version": "0.0.1",
   "description": "NOW 活动组件 选项卡",
   "main": "src/index.js",
   "keywords": [

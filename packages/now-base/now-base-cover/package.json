@@ -1,6 +1,6 @@
 {
   "name": "now-base-cover",
-  "version": "5.79.0",
+  "version": "0.0.1",
   "description": "NOW 基础组件 cover",
   "main": "src/index.js",
   "keywords": [

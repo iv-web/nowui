@@ -1,6 +1,6 @@
 {
   "name": "now-display-banner",
-  "version": "5.86.0",
+  "version": "0.0.1",
   "description": "NOW直播组件 轮播图组件",
   "main": "src/index.js",
   "keywords": [
@@ -16,9 +16,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "eventname": "^5.86.0",
-    "now-base-image": "^5.86.0",
     "classnames": "2.2.5",
+    "eventname": "^0.0.1",
+    "now-base-image": "^0.0.1",
     "react": "^15.0.0 || ^16.0.0"
   },
   "maintainers": [

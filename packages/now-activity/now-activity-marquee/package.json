@@ -1,6 +1,6 @@
 {
   "name": "now-activity-marquee",
-  "version": "5.67.0",
+  "version": "0.0.1",
   "description": "活动跑马灯组件",
   "main": "src/index.js",
   "keywords": [

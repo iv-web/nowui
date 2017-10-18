@@ -3,11 +3,11 @@
     "name": "ivweb"
   },
   "dependencies": {
-    "now-util-cookie": "^5.53.0",
-    "now-util-device": "^5.53.0",
-    "now-util-localstorge": "^5.53.0",
-    "now-util-url": "^5.53.0",
-    "now-util-webp": "^5.56.0"
+    "now-util-cookie": "^0.0.1",
+    "now-util-device": "^0.0.1",
+    "now-util-localstorge": "^0.0.1",
+    "now-util-url": "^0.0.1",
+    "now-util-webp": "^0.0.1"
   },
   "description": "util",
   "devDependencies": {},
@@ -31,7 +31,7 @@
     "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "5.56.0",
+  "version": "0.0.1",
   "babel": {
     "presets": [
       "react",

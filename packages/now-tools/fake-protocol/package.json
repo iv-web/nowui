@@ -4,7 +4,7 @@
     "name": "ivweb"
   },
   "description": "fake-protocol",
-  "version": "5.61.0",
+  "version": "0.0.1",
   "main": "src/index.js",
   "license": "MIT",
   "optionalDependencies": {},
@@ -14,7 +14,7 @@
     "dev": "babel src -d lib -w"
   },
   "dependencies": {
-    "device": "^5.61.0"
+    "device": "^0.0.1"
   },
   "devDependencies": {},
   "maintainers": [

@@ -1,8 +1,8 @@
 {
   "author": "",
   "dependencies": {
-    "react": "^15.0.0 || ^16.0.0",
-    "now-base-animation": "*"
+    "now-base-animation": "^0.0.1",
+    "react": "^15.0.0 || ^16.0.0"
   },
   "description": "NOW直播 基础组件 toast",
   "devDependencies": {},
@@ -32,7 +32,7 @@
     "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "5.68.0",
+  "version": "0.0.1",
   "babel": {
     "presets": [
       "react",

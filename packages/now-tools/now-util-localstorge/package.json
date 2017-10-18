@@ -23,7 +23,7 @@
       "name": "ivwebteam"
     }
   ],
-  "version": "5.53.0",
+  "version": "0.0.1",
   "babel": {
     "presets": [
       "react",
