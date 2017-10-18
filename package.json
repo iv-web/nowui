@@ -1,15 +1,12 @@
 {
   "name": "nowui",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "NowUI 移动端 React 组件库",
   "scripts": {
-    "register": "node ./register",
-    "publish": "git pull && tlerna publish --cd-version minor",
-    "build": "NODE_ENV=jb ./node_modules/.bin/gulp dist",
     "dist": "babel-node .storybook/now-design/server/build",
-    "start": "npm run dev",
     "dev": "babel-node .storybook/now-design/server/index"
   },
+  "main": "dist/index.js",
   "author": "ivwebteam",
   "license": "MIT",
   "dependencies": {

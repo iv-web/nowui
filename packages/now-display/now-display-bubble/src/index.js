@@ -3,7 +3,6 @@ import ReactDom from 'react-dom';
 import Ball from './lib/ball';
 import BubbleWithMotionPath from './lib/bubble_with_motionpath';
 import eventname from 'eventname'
-import device from 'device';
 import '../assets/index.scss';
 
 export default class Bubbles extends Component {

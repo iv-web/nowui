@@ -14,9 +14,9 @@ storiesOf('NowUI', module, {
 .add("what's NowUI", () => (
     <MarkdownPreview className="markdown-body"  value={NOWDESIGN} key="what's NowUI" />
 ))
-.add("快速开始", () => (
-    <MarkdownPreview className="markdown-body"  value={ReadMe} key="快速开始" />
-))
+// .add("快速开始", () => (
+//     <MarkdownPreview className="markdown-body"  value={ReadMe} key="快速开始" />
+// ))
 .add("安装与使用", () => (
     <MarkdownPreview className="markdown-body"  value={INSTALL} key="安装与使用" />
 ))

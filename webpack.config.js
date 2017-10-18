@@ -9,7 +9,7 @@ const fallbackPath = fs.readdirSync(path.join(__dirname, './packages')).map((fil
 module.exports = {
     entry: './index.js',
     output: {
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'nowui.min.js'
     },
     resolve: {

@@ -33,18 +33,20 @@ $ npm install 需要的组件名(now-xxx-xxx)
 ### 2. 直接引用 cdn 文件
 
 在浏览器中使用 script 直接引入文件，并使用全局变量 Now
-`<script src="//nowui.ivweb.io/cdn/nowui.min.js"></script>`
+
+```
+<script src="//nowui.ivweb.io/cdn/nowui.min.js"></script>
+```
 
 同时也会引入全局的 React，ReactDom 对象，可直接使用
 
-```
+```javascript
 ReactDom.render(React.createElement(Now.base.empty), document.body)
 ```
 
 ## 使用
 
-具体组件使用方法，可[查看文档](nowui.ivweb.io/doc/index.html)
-```
+```javascript
 import Button from now-base-button
 
 <Button />
@@ -53,4 +55,4 @@ import Button from now-base-button
 每个组件的具体使用方法可参考对应组件的[文档](http://nowui.ivweb.io/doc/index.html)
 
 ## 许可证
-MIT
+NowUI is [MIT](./LICENSE)

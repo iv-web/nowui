@@ -7,7 +7,7 @@ const Path = require('path');
 
 let scripts = {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
+    // "prepublish": "webpack",
     // "build": "babel src -d lib  --copy-files && npm publish",
     "dev": "babel src -d lib -w"
 };

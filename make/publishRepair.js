@@ -9,10 +9,10 @@ const Path = require('path');
 fs.readdir(Path.join(__dirname, '../packages'), (err, modulesType) => {
     modulesType.map((moduleTypeName) => {
         let p = Promise.resolve();
-        fs.readdir(Path.join(__dirname, '../packages', moduleTypeName, '@tencent'), (err, libs) => {
+        fs.readdir(Path.join(__dirname, '../packages', moduleTypeName), (err, libs) => {
             libs.map((lib) => {
-                let cwd = Path.join(__dirname, '../packages', moduleTypeName, '@tencent', lib);
-                let packageName = `@tencent/${lib}`
+                let cwd = Path.join(__dirname, '../packages', moduleTypeName, lib);
+                let packageName = `${lib}`
                 p = p.then(() => {
                         return shouldInstall(cwd, packageName);
                     })
