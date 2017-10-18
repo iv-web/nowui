@@ -4,7 +4,7 @@
     "name": "ivweb"
   },
   "description": "获取设备类型",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/index.js",
   "license": "MIT",
   "optionalDependencies": {},

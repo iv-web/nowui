@@ -18,7 +18,7 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
     "dev": "babel src -d lib -w"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "maintainers": [
     {
       "email": "ivwebt@gamil.com",

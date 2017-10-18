@@ -21,7 +21,7 @@
       "name": "ivwebteam"
     }
   ],
-  "name": "now-base-scroller",
+  "name": "now-base-titlebar",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "readmeFilename": "README.md",
@@ -29,7 +29,7 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
     "dev": "babel src -d lib -w"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "babel": {
     "presets": [
       "react",

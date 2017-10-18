@@ -4,7 +4,7 @@
   },
   "dependencies": {
     "now-util-cookie": "^0.0.2",
-    "now-util-device": "^0.0.2",
+    "now-util-device": "^0.0.3",
     "now-util-localstorge": "^0.0.2",
     "now-util-url": "^0.0.2",
     "now-util-webp": "^0.0.2"
@@ -30,7 +30,7 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
     "dev": "babel src -d lib -w"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "babel": {
     "presets": [
       "react",

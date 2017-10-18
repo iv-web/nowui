@@ -1,6 +1,6 @@
 {
   "name": "now-display-bubble",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NowUI 点赞气泡组件",
   "main": "src/index.js",
   "keywords": [
@@ -13,9 +13,8 @@
   },
   "devDependencies": {},
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "device": "^0.0.1",
     "eventname": "^0.0.2",
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0"
