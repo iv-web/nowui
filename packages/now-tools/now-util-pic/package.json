@@ -4,9 +4,9 @@
     "name": "ivweb"
   },
   "dependencies": {
-    "now-util-webp": "^0.0.1"
+    "now-util-webp": "^0.0.2"
   },
-  "description": "NOW直播 格式化图片请求操作, 自动替换为是否支持 webp格式",
+  "description": "NowUI 格式化图片请求操作, 自动替换为是否支持 webp格式",
   "keywords": [
     "now",
     "util",
@@ -16,10 +16,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "maintainers": [
     {
       "email": "ivwebt@gamil.com",

@@ -4,7 +4,7 @@
     "name": "ivweb"
   },
   "dependencies": {},
-  "description": "NOW直播 localstorge相关操作",
+  "description": "NowUI localstorge相关操作",
   "keywords": [
     "now",
     "util",
@@ -14,7 +14,6 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "maintainers": [
@@ -23,7 +22,7 @@
       "name": "ivwebteam"
     }
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "babel": {
     "presets": [
       "react",

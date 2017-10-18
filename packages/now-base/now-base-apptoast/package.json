@@ -1,6 +1,6 @@
 {
   "name": "now-base-apptoast",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NOW 基础组件 APP阻断式toast",
   "main": "src/index.js",
   "keywords": [
@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "devDependencies": {},
@@ -18,7 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "now-base-animation": "^0.0.1",
+    "now-base-animation": "^0.0.2",
     "react": "^15.0.0 || ^16.0.0"
   },
   "maintainers": [

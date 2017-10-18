@@ -1,10 +1,10 @@
 {
   "author": "",
   "dependencies": {
-    "now-base-animation": "^0.0.1",
+    "now-base-animation": "^0.0.2",
     "react": "^15.0.0 || ^16.0.0"
   },
-  "description": "NOW直播 基础组件 toast",
+  "description": "NowUI toast 吐死组件",
   "devDependencies": {},
   "dist": {
     "key": "/now-base-toast/-/now-base-toast-1.0.0.tgz",
@@ -29,10 +29,9 @@
   "readme": "ERROR: No README data found!",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "babel": {
     "presets": [
       "react",

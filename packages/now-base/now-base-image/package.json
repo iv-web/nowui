@@ -1,7 +1,7 @@
 {
   "name": "now-base-image",
-  "version": "0.0.1",
-  "description": "NOW直播组件 图片加载器",
+  "version": "0.0.2",
+  "description": "NowUI组件 图片加载器",
   "main": "src/index.js",
   "keywords": [
     "now",
@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "devDependencies": {},

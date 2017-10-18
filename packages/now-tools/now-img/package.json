@@ -1,6 +1,6 @@
 {
   "name": "now-img",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "src/index.js",
   "description": "now 直播 公用图片",
   "author": {
@@ -8,7 +8,6 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "license": "MIT",

@@ -4,9 +4,9 @@
     "name": "ivweb"
   },
   "dependencies": {
-    "now-util-cookie": "^0.0.1"
+    "now-util-cookie": "^0.0.2"
   },
-  "description": "NOW直播 cookie 操作",
+  "description": "NowUI cookie 操作",
   "devDependencies": {},
   "keywords": [
     "now",
@@ -17,10 +17,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "maintainers": [
     {
       "email": "ivwebt@gamil.com",

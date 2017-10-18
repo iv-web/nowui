@@ -1,7 +1,7 @@
 {
   "name": "now-display-banner",
-  "version": "0.0.1",
-  "description": "NOW直播组件 轮播图组件",
+  "version": "0.0.2",
+  "description": "NowUI 轮播图组件",
   "main": "src/index.js",
   "keywords": [
     "now",
@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "devDependencies": {},
@@ -17,8 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "2.2.5",
-    "eventname": "^0.0.1",
-    "now-base-image": "^0.0.1",
+    "eventname": "^0.0.2",
+    "now-base-image": "^0.0.2",
     "react": "^15.0.0 || ^16.0.0"
   },
   "maintainers": [

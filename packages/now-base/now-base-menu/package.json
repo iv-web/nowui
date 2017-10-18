@@ -1,7 +1,7 @@
 {
   "name": "now-base-menu",
-  "version": "0.0.1",
-  "description": "NOW直播组件 管理弹窗",
+  "version": "0.0.2",
+  "description": "NowUI 菜单组件",
   "main": "src/index.js",
   "keywords": [
     "now",
@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "devDependencies": {},

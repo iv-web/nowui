@@ -1,6 +1,6 @@
 {
   "name": "now-base-cover",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NOW 基础组件 cover",
   "main": "src/index.js",
   "keywords": [
@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "dependencies": {

@@ -3,11 +3,11 @@
   "dependencies": {
     "classnames": "*",
     "now-img": "^5.4.1",
-    "now-util-pic": "^0.0.1",
+    "now-util-pic": "^0.0.2",
     "react": "^15.0.0 || ^16.0.0",
     "react-transition-group": "^2.2.0"
   },
-  "description": "NOW直播组件 连击礼物消息展示",
+  "description": "NowUI 连击礼物组件",
   "devDependencies": {},
   "dist": {
     "key": "/now-display-combogift/-/now-display-combogift-5.4.1.tgz",
@@ -33,10 +33,9 @@
   "readmeFilename": "README.md",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "babel": {
     "presets": [
       "react",

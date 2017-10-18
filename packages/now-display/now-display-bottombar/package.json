@@ -3,7 +3,7 @@
   "dependencies": {
     "react": "^15.0.0 || ^16.0.0"
   },
-  "description": "NOW直播组件 下载提示条",
+  "description": "NowUI 底部提示条组件",
   "devDependencies": {},
   "keywords": [
     "now，展示组件"
@@ -22,10 +22,9 @@
   "readmeFilename": "README.md",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "babel": {
     "presets": [
       "react",
