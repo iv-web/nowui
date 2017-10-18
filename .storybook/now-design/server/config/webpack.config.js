@@ -13,11 +13,28 @@ import {
 } from './utils';
 import babelLoaderConfig from './babel.js';
 
-const fallbackPath = nodePaths.concat(fs.readdirSync(path.join(__dirname, '../../../../packages')).map((filename) => {
-    return path.join(__dirname, '../../../../packages', filename);
-}));
+const packagesPath = path.join(__dirname, '../../../../packages');
 
-console.log(fallbackPath);
+// const fallbackPath = nodePaths.concat(fs.readdirSync(path.join(__dirname, '../../../../packages')).map((filename) => {
+//     return path.join(packagesPath, filename);
+// }));
+
+const alias = {
+  'now-design-ui': path.join(__dirname, '../../../now-design-ui'),
+  '@now-design': path.join(__dirname, '../../../now-design'),
+  '@kadira/storybook-addons': require.resolve('@kadira/storybook-addons'),
+}; 
+
+fs.readdir(packagesPath, (err, libs) => {
+  let p = Promise.resolve();
+  libs.map((libName) => {
+      fs.readdir(path.join(packagesPath, libName), (err, moduleNames) => {
+          moduleNames.map((moduleName) => {
+              alias[moduleName] = path.join(packagesPath, libName, moduleName, 'src', 'index.js');
+          })
+      })
+  })
+})
 
 export default function () {
   const config = {
@@ -92,15 +109,8 @@ export default function () {
       extensions: ['.js', '.json', '.jsx', ''],
       // Add support to NODE_PATH. With this we could avoid relative path imports.
       // Based on this CRA feature: https://github.com/facebookincubator/create-react-app/issues/253
-      fallback: fallbackPath,
-      alias: {
-        // This is to add addon support for NPM2
-        // 'react': 'react/d.js',
-        // 'react-dom': 'react-dom/index',
-        'now-design-ui': path.join(__dirname, '../../../now-design-ui'),
-        '@now-design': path.join(__dirname, '../../../now-design'),
-        '@kadira/storybook-addons': require.resolve('@kadira/storybook-addons'),
-      },
+      // fallback: fallbackPath,
+      alias
     },
   };
 

@@ -8,22 +8,9 @@ module.exports = {
         filename: 'index.js',
         libraryTarget: 'umd'
     },
-    externals: [
-        (context, request, callback) => {
-            if (/loader/ig.test(request)) {
-                return callback();
-            }
-
-            if (/^[^/.]/ig.test(request)) {
-                return callback(null, request);
-            }
-            
-            callback();
-        },
-    ],
     module: {
         loaders: [{
-            test: /\.js|jsx$/,
+            test: /.js|jsx$/,
             exclude: /node_modules/,
             loader: 'babel',
             query: {
@@ -34,19 +21,16 @@ module.exports = {
                 }], 'stage-0']
             },
         }, {
-            test: /\.scss$/,
+            test: /.scss$/,
             loaders: ['style', 'css', 'sass']
         }, {
-            test: /\.css$/,
-            loaders: ['style', 'css']
-        }, {
-            test: /\.(png\?.*|jpg\?.*|jpg|png)$/,
+            test: /.(png?.*|jpg?.*|jpg|png)$/,
             loader: 'url-loader'
         }, {
-            test: /\.(blob|svg)$/,
+            test: /.(blob|svg)$/,
             loader: 'file-loader'
         }, {
-            test: /\.json$/,
+            test: /.json$/,
             loader: 'json'
         }]
     }

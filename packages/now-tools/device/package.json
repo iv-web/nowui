@@ -5,13 +5,12 @@
   },
   "description": "获取设备类型",
   "version": "5.61.0",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "license": "MIT",
   "optionalDependencies": {},
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "babel src -d lib  --copy-files",
-    "build": "babel src -d lib  --copy-files && npm publish",
+    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "dependencies": {},

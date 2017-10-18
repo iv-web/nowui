@@ -6,7 +6,7 @@ export default class DownloadbarWrapper extends Component {
     render () {
         return (
             <Downloadbar 
-                wording="Adam邀请你一起看直播"
+                wording="点我下载now"
                 downWording ="下载"
                 logo="https://11.url.cn/now/activity/april-lottery/img/logo_e29054a.png"
                 onClick={ () => {

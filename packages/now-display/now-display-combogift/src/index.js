@@ -1,4 +1,4 @@
-import '../assets/index.css'
+import '../assets/index.scss'
 import React, { Component } from 'react'
 import classnames from 'classnames'
 import { defaultAvatar, defaultGift } from 'now-img'

@@ -24,6 +24,7 @@ module.exports = {
         "semi": ["off", "never"],
         "prefer-template": "off",
         "no-unused-vars": "warn",
+        "one-var": "off",
         "no-use-before-define": "off",
         "comma-dangle": "off",
         "no-param-reassign": "warn",
@@ -33,10 +34,6 @@ module.exports = {
         "no-unused-expressions": "warn",
         "keyword-spacing": "warn",
         "consistent-return": "off",
-        "one-var": [
-            "warn",
-            "always"
-        ],
         "arrow-body-style": [
             "warn",
             "as-needed"

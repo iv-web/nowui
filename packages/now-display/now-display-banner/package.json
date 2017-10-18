@@ -2,15 +2,14 @@
   "name": "now-display-banner",
   "version": "5.86.0",
   "description": "NOW直播组件 轮播图组件",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "keywords": [
     "now",
     "数据组件"
   ],
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "babel src -d lib  --copy-files",
-    "build": "babel src -d lib  --copy-files && npm publish",
+    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "devDependencies": {},

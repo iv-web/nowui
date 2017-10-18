@@ -16,7 +16,7 @@
     "展示组件"
   ],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "maintainers": [
     {
       "email": "ivwebt@gamil.com",
@@ -28,8 +28,7 @@
   "readme": "ERROR: No README data found!",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "babel src -d lib  --copy-files",
-    "build": "babel src -d lib  --copy-files && npm publish",
+    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "version": "5.67.0",

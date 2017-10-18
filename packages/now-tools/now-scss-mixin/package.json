@@ -14,7 +14,7 @@
       "name": "ivwebteam"
     }
   ],
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "babel": {
     "presets": [
       "react",

@@ -5,40 +5,33 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'lib'),
-        filename: 'index.js'
-    },
-    externals: {
-        'react': 'react',
-        'react-dom': 'ReactDOM'
+        filename: 'index.js',
+        libraryTarget: 'umd'
     },
     module: {
         loaders: [{
-            test: /\.js|jsx$/,
+            test: /.js|jsx$/,
             exclude: /node_modules/,
             loader: 'babel',
             query: {
-                presets: ['react', ['es2015', {
-                    'loose': true
-                }], 'stage-0'],
+                presets: ['react', ['env', {
+                    targets: {
+                        browsers: ['Android >= 2.3', 'iOS >= 6'],
+                    }
+                }], 'stage-0']
             },
         }, {
-            test: /\.scss$/,
+            test: /.scss$/,
             loaders: ['style', 'css', 'sass']
         }, {
-            test: /\.css$/,
-            loaders: ['style', 'css']
-        }, {
-            test: /\.(png\?.*|jpg\?.*|jpg|png)$/,
+            test: /.(png?.*|jpg?.*|jpg|png)$/,
             loader: 'url-loader'
         }, {
-            test: /\.(blob|svg)$/,
+            test: /.(blob|svg)$/,
             loader: 'file-loader'
         }, {
-            test: /\.json$/,
+            test: /.json$/,
             loader: 'json'
         }]
-    },
-    plugins: [
-        new UglifyJSPlugin()
-    ]
+    }
 }

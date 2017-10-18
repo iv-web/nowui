@@ -7,8 +7,8 @@ const Path = require('path');
 
 let scripts = {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "babel src -d lib  --copy-files",
-    "build": "babel src -d lib  --copy-files && npm publish",
+    "prepublish": "webpack",
+    // "build": "babel src -d lib  --copy-files && npm publish",
     "dev": "babel src -d lib -w"
 };
 
@@ -35,15 +35,15 @@ fs.readdir(Path.join(__dirname, '../packages'), (err, libs) => {
                             packageJSON.scripts = scripts
                         }
         
-                        if (packageJSON.main) {
-                            if (packageJSON.main.indexOf('index' < 0) && packageJSON.main !== 'index.js') {
-                                packageJSON.main = packageJSON.main.replace(/dist/ig, 'lib')
-                            } else {
-                                packageJSON.main = 'lib/index.js'
-                            }
-                        } else {
-                            packageJSON.main = 'lib/index.js'
-                        }
+                        // if (packageJSON.main) {
+                        //     if (packageJSON.main.indexOf('index' < 0) && packageJSON.main !== 'index.js') {
+                        //         packageJSON.main = packageJSON.main.replace(/dist/ig, 'lib')
+                        //     } else {
+                        //         packageJSON.main = 'src/index.js'
+                        //     }
+                        // } else {
+                            packageJSON.main = 'src/index.js'
+                        // }
         
                         packageJSON.babel = {
                             presets: ['react', ['env', {

@@ -2,15 +2,14 @@
   "name": "now-base-menu",
   "version": "5.86.0",
   "description": "NOW直播组件 管理弹窗",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "keywords": [
     "now",
     "展示组件"
   ],
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/setup.js",
-    "prepublish": "babel src -d lib  --copy-files",
-    "build": "babel src -d lib  --copy-files && npm publish",
+    "prepublish": "webpack",
     "dev": "babel src -d lib -w"
   },
   "devDependencies": {},
